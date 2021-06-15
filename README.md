@@ -18,7 +18,8 @@ npm install body-parser express ejs mongoose axios
 make a cronjob if you want to make your app.js file run after every 24 hour.
 ```
 
-## Find below URL to watch popular youtube trends
+## Find below URL to watch popular youtube trends.
+Click on any Title and enjoy the video.
 
 ```
 http://ec2-3-95-30-148.compute-1.amazonaws.com/youtube/
