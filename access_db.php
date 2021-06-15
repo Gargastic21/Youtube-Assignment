@@ -22,14 +22,22 @@
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Page Title</title>
+<title>Youtube Trends</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type ="text/css">
+body {
+background-image: url('<?php echo $backimg;?>');
+}
+</style>
 </head>
 <body>
-
-<div>
-</div>
-
+   <header>
+   </header>
 </body>
+
+</html>
+
 </html>
