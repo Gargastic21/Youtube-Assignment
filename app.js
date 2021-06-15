@@ -7,7 +7,8 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 const axios = require("axios");
-const url = "https://www.googleapis.com/youtube/v3/videos?part=snippet,statistics&chart=mostPopular&key=AIzaSyAa5gCWfHG5g9_HUlphuitl9gxfp2_HZfs&maxResults=50&pageToken=";
+const key = enter your youtube api key
+const url = "https://www.googleapis.com/youtube/v3/videos?part=snippet,statistics&chart=mostPopular&key="+key"&maxResults=50&pageToken=";
 
 mongoose.connect('mongodb://localhost:27017/youtubeDB', {useNewUrlParser: true});
 
@@ -98,26 +99,3 @@ app.route("/")
 app.listen(3001,function(){
     console.log("server started on port 3001");
  });
-
- 
-
-//  axios.get(url)
-//   .then((response) => {
-//     let output= response.data
-//     console.log(output.items.length)
-//     for(i=0;i<output.items.length;i++){
-//       var newid = output.items[i]['id']
-//       var newtitle= output.items[i]['snippet']['title']
-//       var newchannelId= output.items[i]['snippet']['channelId']
-//       var newInput = new Trend({ 
-//         id: newid,
-//         title: newtitle,
-//         channelId: newchannelId
-//       }); // newinput ending
-//       newInput.save(function (err, newdata) {
-//         if (err) 
-//         return console.error(err);
-//         console.log(newdata.title + " saved to Trends collection.");
-//       }) // save ending
-//     }  //for loop ending
-// })
